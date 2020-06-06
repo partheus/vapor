@@ -18,6 +18,11 @@ footer {
   text-align: center;
 }
 
+footer > a{
+  text-decoration: none;
+  color: #3fc5f0;
+}
+
 .aesthetic {
 	color: #303960;
 	padding: 20px;
