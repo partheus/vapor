@@ -32,7 +32,7 @@ footer > a{
 /* the glitch animation */
 
 .glitched {
-	padding-left: 2rem;
+	padding-left: 6rem;
   color: #dfe38e;
   font-size: 6rem;
   font-family: "Monoton", cursive;
@@ -46,14 +46,14 @@ footer > a{
 @keyframes glitch {
   2%,
   64% {
-    transform: translate(2px, 0) skew(0deg);
+    transform: translate(3px, 0) skew(-12deg);
   }
   4%,
   60% {
     transform: translate(-2px, 0) skew(0deg);
   }
   62% {
-    transform: translate(0, 0) skew(5deg);
+    transform: translate(15px, 0) skew(15deg);
   }
 }
 
@@ -65,7 +65,7 @@ footer > a{
 }
 
 .glitched:before {
-  animation: glitchTop 1s linear infinite;
+  animation: glitchTop 0s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
@@ -85,7 +85,7 @@ footer > a{
 }
 
 .glitched:after {
-  animation: glitchBottom 1.5s linear infinite;
+  animation: glitchBottom 0s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
